@@ -8,9 +8,17 @@
 
 .box {
 	margin: 5px; 
-	width: 214px; 
+	width:514px; 
 }
 
 .box img {
 	width: 100%;
+}
+
+.actions {
+	color:#DBDBDB;
+}
+
+.actions:hover {
+	text-decoration:none;
 }
