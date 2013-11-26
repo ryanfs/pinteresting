@@ -19,10 +19,10 @@
          
       <% if user_signed_in? %>
             <li><%= link_to new_pin_path do %><span class="glyphicon glyphicon-plus"></span>New Pin<% end %></li>
-            <li><%= link_to "About" , about_path %></li>
+            <li><%= link_to "How it works" , about_path %></li>
             <li><%= link_to "Account Settings", edit_user_registration_path %></li>
           <%else %>
-                <li><%= link_to "About" , about_path %></li>
+                <li><%= link_to "How it works" , about_path %></li>
                 <li><%= link_to "Log in" , new_user_session_path %></li>
           <% end %>
         </ul>
