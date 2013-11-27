@@ -17,3 +17,49 @@ $jumbotron-bg: white;
 .navbar-brand {
 	font-weight: bold;
 }
+
+.box {
+	margin:0 auto;
+}
+
+.panel {
+	max-width:500px;
+}
+
+.panel-holder {
+	margin: 0 auto;
+	max-width:500px;
+}
+
+.actions {
+	float:right;
+}
+
+.description {
+	float:left;
+}
+
+.username {
+	float:right;
+	margin: 0 5px;
+	width:29%;
+}
+
+a {
+	text-decoration:none;
+}
+
+.glyphicon-chevron-left {
+	font-size:28px;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+.panel img {
+	width:100%;
+}
+}

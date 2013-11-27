@@ -1,25 +1,26 @@
-<%= link_to 'Back', pins_path %>
+<%= link_to pins_path do %><span class="glyphicon glyphicon-chevron-left"></span><span class="no-decoration"></span><% end %>
 
-<div class="row">
-  <div class="col-md-offset-2 col-md-8">
-    <div class="panel panel-default">
-      <div class="panel-heading center">
+    
+    <div class="box-show panel panel-default">
+      <div class="center">
         <%= image_tag @pin.image.url(:medium) %>
       </div>
       <div class="panel-body">
-        <p><%= @pin.description %></p>
-        <p><strong><%= @pin.user.name if @pin.user %></strong></p>
-
+        <div class="description">
+          <p><%= @pin.description %></p>
+        </div>  
+        <div class="username">  
+          <p><em><%= @pin.user.name if @pin.user %></em></p>
+        </div>
         <% if @pin.user == current_user %>
+        <div class="actions">
           <%= link_to edit_pin_path(@pin) do %>
                 <span class="glyphicon glyphicon-edit actions"></span>
           <% end %>  
-          <%= link_to @pin, method: :delete, data: { confirm: 'Are you sure you want to delete this... forever?' } do %>
-              &nbsp;<span class="glyphicon glyphicon-trash actions"></span>
+                      <%= link_to @pin, method: :delete, data: { confirm: 'Are you sure you want to delete this... forever?' } do %>
+              <span class="glyphicon glyphicon-trash actions">&nbsp;</span>
             <% end %>
-        <% end %>
-
+        </div>
+      <% end %>
       </div>
     </div>
-  </div>
-</div>
