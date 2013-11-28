@@ -1,5 +1,6 @@
 <%= render 'pages/home' unless user_signed_in? %>
   <% @pins.each do |pin| %>
+ <div class="panel-holder-holder"> 
   <div class="panel-holder">
     <div class="panel panel-default">
       <div class="panel-heading center">
@@ -27,6 +28,7 @@
       
     </div>
   </div>
+ </div> 
   <% end %>
 
 <div class="center">
