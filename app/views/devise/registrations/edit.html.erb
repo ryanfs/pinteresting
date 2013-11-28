@@ -10,8 +10,13 @@
       
       <div class="form-group">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <% f.label :name %>
         <%= f.text_field :name, class: "form-control", placeholder:"Name", :autofocus => true %>
+=======
+        <%= f.label :name %>
+        <%= f.text_field :name, class: "form-control", :autofocus => true %>
+>>>>>>> 6142facd7a17481962d63d27463eab66ee997d35
 =======
         <%= f.label :name %>
         <%= f.text_field :name, class: "form-control", :autofocus => true %>
@@ -26,6 +31,7 @@
 
       <div class="form-group">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <% f.label :enter_current_password %>
         <%= f.password_field :current_password, placeholder:"Current password" ,class: "form-control" %>
          <i>(we need your password in order to make changes)</i>
@@ -37,7 +43,18 @@
 =======
         <%= f.label :enter_current_password %> <i>(we need your current password in order to make this change)</i>
         <%= f.password_field :current_password, class: "form-control" %>
+=======
+        <%= f.label :enter_current_password %> <i>(we need your current password in order to make this change)</i>
+        <%= f.password_field :current_password, class: "form-control" %>
       </div>
+
+      <div class="form-group">
+        <%= f.label :change_my_password %><i>(leave this blank to keep the same password)</i> 
+        <%= f.password_field :password, class: "form-control", :autocomplete => "off" %>
+>>>>>>> 6142facd7a17481962d63d27463eab66ee997d35
+      </div>
+
+ 
 
       <div class="form-group">
         <%= f.label :change_my_password %><i>(leave this blank to keep the same password)</i> 
@@ -57,6 +74,9 @@
     <h4>Fuck this shit!</h4>
 =======
     <h3>Fuck this shit!</h3>
+<<<<<<< HEAD
+>>>>>>> 6142facd7a17481962d63d27463eab66ee997d35
+=======
 >>>>>>> 6142facd7a17481962d63d27463eab66ee997d35
     <%= button_to "Destroy my account", registration_path(resource_name), :data => { :confirm => "Are you sure? There is no unpressing the NSA button." }, :method => :delete, class: "btn btn-danger" %>
 

@@ -1,0 +1,71 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+$body-bg: #ecf0f1;
+$font-family-sans-serif:                'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$navbar-height: 45px;
+$navbar-default-bg: white;
+$navbar-default-brand-color: #c0392b;
+$brand-primary:  #27ae60;
+$jumbotron-bg: white;
+
+@import 'bootstrap';
+
+.center {
+     text-align: center;
+}
+
+.navbar-brand {
+	font-weight: bold;
+}
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+.box {
+	margin:0 auto;
+}
+
+.panel {
+	max-width:500px;
+}
+
+.panel-holder {
+	margin: 0 auto;
+	max-width:500px;
+}
+
+.actions {
+	float:right;
+}
+
+.description {
+	float:left;
+}
+
+.username {
+	float:right;
+	margin: 0 5px;
+	width:29%;
+}
+
+a {
+	text-decoration:none;
+}
+
+.glyphicon-chevron-left {
+	font-size:28px;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+.panel img {
+	width:100%;
+}
+}
+=======
+>>>>>>> 6142facd7a17481962d63d27463eab66ee997d35
+=======
+>>>>>>> 6142facd7a17481962d63d27463eab66ee997d35
